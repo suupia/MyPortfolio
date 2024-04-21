@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+}
+
+span {
+    color: lightseagreen;
+}
+
+nav {
+    display: flex;  /*横並びにする*/
+    justify-content: space-between; /*間隔を空ける*/
+    align-items: center;  /*縦中央にする*/
+    padding: 45px 8% 0 8%; /*上右下左のpadding*/
+    /* min-height: 10vh;
+    background-color: #101010;
+    color: white; */
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px; /*文字と文字の間隔*/
+    cursor: pointer; /*カーソルを指にする*/
+}
+
+nav ul li {
+    display: inline-block; /*横並びにする*/
+    padding: 10px 25px; /*上下のpadding*/
+    /* list-style: none; リストのマーカーを消す */
+}
+
+nav ul li a {
+    color: while;
+    text-decoration: none; /*下線を消す*/
+    font-weight: bold; /*太字*/
+    transition: all 0.3s ease; /*hover時のアニメーション*/
+}
+
+nav ul li a:hover {
+    color: lightseagreen;
+}
+
+.btn {
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /*hover時のアニメーション*/
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    border-radius: 20px;
+}
+
+.content .body{
+    display: flex; /*横並びにする*/
+    justify-content: space-evenly;
+    /* align-items: center; 縦中央にする */
+    padding-right: 50px;
+    padding-left: 270px;
+
+}
+
+.content .body img {
+    /* width: 1080px;
+    height: 720px;
+    margin-top: -150px; */
+    
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    font-size: 2px;
+    font-size: 20px;
+}
+
+.newsletter form {
+    width: 380px;
+    position: relative;
+    background-color: red;
+}
+
+.newsletter form input:first-child {
+    width: 100%;
+    padding: 15px 130px 15px 15px;
+    outline: none;
+    border: 2px solid lightseagreen;
+    border-radius: 30px;
+}
+
+
+.newsletter form input:last-child {
+    position: absolute;
+    border: none;
+    top: 5px;
+    right: 6px;
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+}
